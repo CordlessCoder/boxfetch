@@ -274,5 +274,5 @@ for i in range(len(names)):
         sep="",
     )
 os.system(
-    f"kitty +kitten icat --place {len(logo[0]) - 2}x{len(logo) - 2}@1x2 Desktop/logo_arch_detailed_less.png"
+    f"kitty +kitten icat --place {len(logo[0]) - 2}x{len(logo) - 2}@1x2 ./logo_arch_detailed_less.png"
 )
