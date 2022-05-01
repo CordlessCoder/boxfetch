@@ -17,7 +17,7 @@ def auto():
         return "arch"
 
 
-path_to_logos = "/home/roman/Documents/boxfetch/logos"
+path_to_logos = f"{os.environ.get('HOME')}/boxfetch/logos"
 logo = [
     "                                       ",
     "                                       ",
@@ -274,5 +274,5 @@ for i in range(len(names)):
         sep="",
     )
 os.system(
-    f"kitty +kitten icat --place {len(logo[0]) - 2}x{len(logo) - 2}@1x2 ./logo_arch_detailed_less.png"
+    f"kitty +kitten icat --place {len(logo[0]) - 2}x{len(logo) - 2}@1x2 {'/'.join(path_to_logos.split('/')[:-1])}/logo_arch_detailed_less.png"
 )
